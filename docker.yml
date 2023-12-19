@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become : true
+  tasks:
+    - name: Install the latest version of Docker
+      ansible.builtin.yum:
+        name: docker
+        state: latest
+
+    - name: Start service Docker, if not started
+      ansible.builtin.service:
+        name: docker
+        state: started
+        enabled: yes 
