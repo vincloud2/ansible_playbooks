@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become : true
+  tasks:
+    - name: Remove the latest version of docker
+      ansible.builtin.yum:
+        name: docker
+        state: absent
