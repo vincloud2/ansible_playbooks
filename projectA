@@ -1,2 +1,2 @@
-172.31.36.38 ansible_user=ec2-user
-172.31.34.180 ansible_user=ec2-user
+172.31.43.205 ansible_user=ec2-user
+172.31.39.40  ansible_user=ec2-user
